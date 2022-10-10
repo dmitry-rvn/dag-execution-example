@@ -1,0 +1,13 @@
+requests
+click
+pyyaml
+pytest
+jupyterlab
+ipywidgets
+chart_studio
+cufflinks
+loguru
+graphviz
+python-dotenv
+dacite
+paradag

@@ -1,0 +1,27 @@
+downloadable:
+  - USD
+  - EUR
+  - RUB
+  - CNY
+  - GBP
+  - UAH
+  - CHF
+  - PLN
+  - TRY
+calculated:
+  - code: CURR_BASKET
+    sql_filename: calculate_currency_basket.sql  # = (RUB ** 0.5) * (USD ** 0.3) * (EUR ** 0.1) * (CNY ** 0.1)
+    dependencies:
+      - USD
+      - EUR
+      - RUB
+      - CNY
+  - code: EUR_TO_USD
+    sql_filename: calculate_eur_to_usd.sql  # = EUR / USD
+    dependencies:
+      - USD
+      - EUR
+  - code: USD_TO_EUR
+    sql_filename: calculate_usd_to_eur.sql  # = 1 / EUR_TO_USD
+    dependencies:
+      - EUR_TO_USD
