@@ -3,9 +3,8 @@ click
 pyyaml
 pytest
 jupyterlab
-ipywidgets
-chart_studio
-cufflinks
+matplotlib
+seaborn
 loguru
 graphviz
 python-dotenv
